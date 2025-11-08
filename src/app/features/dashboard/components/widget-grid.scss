@@ -1,0 +1,20 @@
+.widget-grid-empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 40vh;
+    color: var(--text-secondary);
+  }
+  
+  .widget-grid-message {
+    text-align: center;
+    opacity: 0.9;
+  }
+  
+  .icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    opacity: 0.7;
+  }
+  
