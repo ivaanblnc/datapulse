@@ -1,8 +1,18 @@
-<div class="widget-grid-empty">
+@if (layoutManager.isEmpty()) {
+  <div class="widget-grid-empty">
     <div class="widget-grid-message">
       <span class="icon">🖥️</span>
       <h2>Aún no has añadido widgets</h2>
-      <p>¡Haz clic en "Añadir widget" y comienza a personalizar tu panel!</p>
+      <button (click)="addDemoWidget()" class="btn btn-primary">Añadir widget demo</button>
     </div>
   </div>
-  
+} @else {
+  <div class="widget-grid-list">
+    @for (widget of layoutManager.allWidgets(); track widget.id) {
+      <div class="widget-card">
+        <b>{{ widget.type | uppercase }}</b>
+        <button (click)="removeWidget(widget.id)" class="btn">✕</button>
+      </div>
+    }
+  </div>
+}
