@@ -1,0 +1,40 @@
+:root {
+    --bg-primary: #fcfcfc;
+    --bg-secondary: #f7f8fa;
+    --bg-tertiary: #e7eaef;
+    --text-primary: #24292f;
+    --text-secondary: #6c7280;
+    --accent: #2563eb;
+    --accent-soft: #60a5fa;
+    --success: #16a34a;
+    --error: #ef4444;
+    --border-color: #d1d5db;
+    --radius-lg: 1.2rem;
+  }
+  
+  [data-theme='dark'] {
+    --bg-primary: #17181e;
+    --bg-secondary: #191a22;
+    --bg-tertiary: #22232b;
+    --text-primary: #e7eaf3;
+    --text-secondary: #92959b;
+    --accent: #60a5fa;
+    --accent-soft: #2563eb;
+    --success: #22c55e;
+    --error: #f87171;
+    --border-color: #2c2f36;
+    --radius-lg: 1.2rem;
+  }
+  .widget-card {
+    background: var(--bg-secondary);
+    border-radius: var(--radius-lg);
+    box-shadow: 0 4px 24px rgba(60,80,110,.06);
+    border: 1px solid var(--border-color);
+    padding: 2rem;
+    transition: box-shadow .3s, transform .2s;
+  }
+  .widget-card:hover {
+    box-shadow: 0 6px 32px rgba(60,80,110,.12);
+    transform: translateY(-0.5rem);
+  }
+    

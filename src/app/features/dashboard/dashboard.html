@@ -1,0 +1,15 @@
+<div class="dashboard-root">
+    <header class="dashboard-header">
+      <span class="logo">🌍 DataPulse</span>
+      <button (click)="themeService.toggle()" class="theme-toggle">
+        {{ themeService.currentTheme() === 'dark' ? '☀️' : '🌙' }}
+      </button>
+    </header>
+    <main class="dashboard-main">
+      <section class="empty-state">
+        <h2>Bienvenido a DataPulse</h2>
+        <p>Empieza añadiendo tu primer widget de datos para visualizar información en tiempo real.</p>
+      </section>
+    </main>
+  </div>
+  
